@@ -1,6 +1,10 @@
-const Item = (props) =>{
+import styles from "./Item.module.css";
+
+const Item = ({foodItem}) =>{
     return(
-        <li>{props.foodItem}</li>
+        <li className={`${styles['kg-item']}`}>
+            <span className={`${styles['kg-span']}`}>{foodItem}</span>
+        </li>
     )
 };
 

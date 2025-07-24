@@ -1,15 +1,13 @@
 import Item from "./item";
 
-const FoodItems = () => {
+const FoodItems = ({items}) => {
 
     // let foodItems = [];
     
-    let foodItems = ["Dal","Green Vegetable","Roti","Salad","Milk","Ghee"];
-
     return(
         
         <ul className="list-group">
-            {foodItems.map((item) =>
+            {items.map((item) =>
                 <Item key={item} foodItem={item}></Item>
             )}
         </ul>
@@ -17,4 +15,4 @@ const FoodItems = () => {
 
 };
 
-export default FoodItems
+export default FoodItems;
