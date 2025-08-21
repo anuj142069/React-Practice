@@ -1,9 +1,21 @@
 import styles from "./Item.module.css";
 
 const Item = ({foodItem}) =>{
+
+    const handleBuyButtonClicked = (e)=>{
+        console.log(e);
+        
+        console.log(`${foodItem} being bought`)
+    }
+
     return(
         <li className={`${styles['kg-item']}`}>
-            <span className={`${styles['kg-span']}`}>{foodItem}</span>
+            <span className={`${styles['kg-span']}`}>{foodItem}
+                <button className="float-end bg-yellow-400 pr-4 pl-4 text-white rounded pb-1"
+                onClick={(e)=>handleBuyButtonClicked(e)}
+                >Buy</button>
+            </span>
+            
         </li>
     )
 };

@@ -1,6 +1,8 @@
 import React from "react"
+import Container from "./components/Container";
 import FoodItems from "./components/FoodItems";
 import ErrorMessage from "./components/ErrorMessage";
+import FoodInput from "./components/FoodInput";
 
 function App() {
 
@@ -10,11 +12,12 @@ function App() {
   // let emptyMessage = foodItems.length === 0 ? <h3>I am still hungry.</h3> : null
 
   return (
-    <>
-      <h1 className="text-4xl font-bold">Healthy Food</h1>
+    <Container>
+      <h1 className="text-4xl font-bold text-yellow-950 text-center p-2">Healthy Food</h1>
       <ErrorMessage items={foodItems}></ErrorMessage>
+      <FoodInput></FoodInput>
       <FoodItems items={foodItems}></FoodItems>
-    </>
+    </Container>
   )
 }
 

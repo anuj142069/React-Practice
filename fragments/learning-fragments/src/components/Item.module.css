@@ -1,8 +1,11 @@
 .kg-item{
-    background-color: khaki;
+    background-color: rgb(255, 255, 255);
     color: red;
 }
 
 .kg-span{
-    border: 1px solid white;
+    border: 1px solid rgb(238, 237, 237);
+    display: block;
+    padding: 14px;
+    
 }
