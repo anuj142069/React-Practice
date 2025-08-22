@@ -1,4 +1,4 @@
-import Item from "./item";
+import Item from "./Item";
 
 const FoodItems = ({items}) => {
 
@@ -8,7 +8,10 @@ const FoodItems = ({items}) => {
         
         <ul className="list-group">
             {items.map((item) =>
-                <Item key={item} foodItem={item}></Item>
+                <Item 
+                key={item} 
+                foodItem={item} 
+                handleBuyButton={()=> console.log(`${item} Baught`)}></Item>
             )}
         </ul>
     )
